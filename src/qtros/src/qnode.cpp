@@ -53,12 +53,12 @@ bool QNode::init() {
     /****camera 1***/
     image_transport::ImageTransport it_1(nh);
     image_transport::Subscriber image_sub_1;
-    image_sub_1 = it_1.subscribe("/amt/ir/flir_tau2/image1", 1, &QNode::myCallback,this);
+    image_sub_1 = it_1.subscribe("/ir/flir_tau2/image1", 1, &QNode::myCallback,this);
 
     /****camera 2***/
     image_transport::ImageTransport it_2(nh);
     image_transport::Subscriber image_sub_2;
-    image_sub_2 = it_2.subscribe("/amt/ir/flir_tau2/image2", 1, &QNode::myCallback2,this);
+    image_sub_2 = it_2.subscribe("/ir/flir_tau2/image2", 1, &QNode::myCallback2,this);
 
     start();
 	return true;
@@ -78,11 +78,11 @@ bool QNode::init(const std::string &master_url, const std::string &host_url) {
     /****camera 1***/
     image_transport::ImageTransport it_1(nh);
     image_transport::Subscriber image_sub_1;
-    image_sub_1 = it_1.subscribe("/amt/ir/flir_tau2/image1", 1, &QNode::myCallback,this);
+    image_sub_1 = it_1.subscribe("/ir/flir_tau2/image1", 1, &QNode::myCallback,this);
     /****camera 2***/
     image_transport::ImageTransport it_2(nh);
     image_transport::Subscriber image_sub_2;
-    image_sub_2 = it_1.subscribe("/amt/ir/flir_tau2/image2", 1, &QNode::myCallback2,this);
+    image_sub_2 = it_1.subscribe("/ir/flir_tau2/image2", 1, &QNode::myCallback2,this);
 
     start();
 	return true;
@@ -93,12 +93,12 @@ ros::NodeHandle nh;
 /****camera 1***/
 image_transport::ImageTransport it_1(nh);
 image_transport::Subscriber image_sub_1;
-image_sub_1 = it_1.subscribe("/amt/ir/flir_tau2/image1", 1, &QNode::myCallback,this);
+image_sub_1 = it_1.subscribe("/ir/flir_tau2/image1", 1, &QNode::myCallback,this);
 
 /****camera 2***/
 image_transport::ImageTransport it_2(nh);
 image_transport::Subscriber image_sub_2;
-image_sub_2 = it_2.subscribe("/amt/ir/flir_tau2/image2", 1, &QNode::myCallback2,this);
+image_sub_2 = it_2.subscribe("/ir/flir_tau2/image2", 1, &QNode::myCallback2,this);
 
 ros::spin();
 	std::cout << "Ros shutdown, proceeding to close the gui." << std::endl;

@@ -251,7 +251,7 @@ void MainWindow::snapshot_cam_1()
     QDateTime time = QDateTime::currentDateTime();
     QString timestamp = time.toString("yyyy-MM-dd hh:mm:ss.zzz");
     QString name="Cam1_";
-    QString path="/media/ubuntu/abr_demo/"+name+timestamp+".jpg";
+    QString path="/media/ubuntu/demo/"+name+timestamp+".jpg";
 
 
     qDebug() << "timestamp:" << timestamp;
