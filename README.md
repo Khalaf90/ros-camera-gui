@@ -65,7 +65,7 @@ Attention: This GUI is designed to display 16-bit grayscale images from thermal 
  
  Translating this in code means: when you do image processing adjust myCallback function in qnode.cpp and displayMat function in main_window.cpp :
  
-- For OpenCV: avoid for loop (loop over an image pixel-by-pixel is slow)
+- For OpenCV: try to avoid for loop (loop over an image pixel-by-pixel is slow)
 - For  Qt: available Qimage formats can be found [at](https://doc.qt.io/qt-5/qimage.html#Format-enum)
 
 * - [x] Update .ui file:
