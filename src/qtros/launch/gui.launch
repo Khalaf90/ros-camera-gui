@@ -1,0 +1,11 @@
+<launch>
+ 
+
+<!-- qtros -->
+ 
+<node pkg="qtros" type="qtros" name="qtros" output="screen"/>
+
+
+
+ 
+</launch>
