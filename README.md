@@ -22,14 +22,14 @@ Camera GUI in ROS with Qt5/C++
 
 * Copy the folder 'qtros' to your catkin workspace src folder.
 * check in the qnode.cpp the topic name you would like to display, currently the topics are:
-   `/amt/ir/flir_tau2/image1` and `/amt/ir/flir_tau2/image2`
+   `/ir/flir_tau2/image1` and `/ir/flir_tau2/image2`
 * check in the main_window.cpp the path, where the snapshot pictures will be saved, currently the path is:
-   `/media/ubuntu/abr_demo/` . You can choose in code in which `image format (.jpg or .png)` the picture should be saved
+   `/media/ubuntu/demo/` . You can choose in code in which `image format (.jpg or .png)` the picture should be saved
 * build the workspace using `catkin_make`
 * source the workspace `source devel/setup.bash`
 * run the package using: - rosrun qtros qtros or run the qtros app located in /devel/lib/qtros/ (using terminal: `./qtros`) 
 * When the package is running:
-	* the first tab is for ROS communications: you will get the ROS Master Url when `roscore` is running and ROS IP using `ifconfig`. Another way for ROS communication could be done using `ROS Environment Variables` and `Hostname`
+	* the first tab is for ROS communications: you will get the ROS Master Url when `roscore` is running and ROS IP using `ifconfig`. 
     * suppose that the camera node and gui node are running on different computers, to establish the ROS network:
 		* in the computer where camera node and roscore is running: navigate to .bashrc file `gedit .bashrc` 
 		* add `export ROS_IP=<gui node Computer IP>` at the end
@@ -65,7 +65,7 @@ Attention: This GUI is designed to display 16-bit grayscale images from thermal 
  
  Translating this in code means: when you do image processing adjust myCallback function in qnode.cpp and displayMat function in main_window.cpp :
  
-- For OpenCV: avoid for loop (loop over an image pixel-by-pixel is slow)
+- For OpenCV: try to avoid for loop (loop over an image pixel-by-pixel is slow)
 - For  Qt: available Qimage formats can be found [at](https://doc.qt.io/qt-5/qimage.html#Format-enum)
 
 * - [x] Update .ui file:
