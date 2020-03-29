@@ -24,11 +24,8 @@ int main(int argc, char **argv) {
     **********************/
     QApplication app(argc, argv);
     qtros::MainWindow w(argc,argv);
-    w.setWindowTitle("AutoBoltReload");
-
-     w.setWindowState(Qt::WindowMaximized);
-    //w.setWindowState(Qt::WindowFullScreen);
-
+    w.setWindowTitle("MyAwesomeGUI");
+    w.setWindowState(Qt::WindowMaximized);
     w.show();
     app.connect(&app, SIGNAL(lastWindowClosed()), &app, SLOT(quit()));
     int result = app.exec();

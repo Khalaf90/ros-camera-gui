@@ -62,52 +62,14 @@
               <string/>
              </property>
              <layout class="QGridLayout" name="gridLayout">
-<<<<<<< HEAD
               <item row="4" column="0">
                <widget class="QLineEdit" name="line_edit_host">
-=======
-              <item row="2" column="0">
-               <widget class="QLineEdit" name="line_edit_master">
                 <property name="maximumSize">
                  <size>
                   <width>402</width>
                   <height>16777215</height>
                  </size>
                 </property>
-                <property name="text">
-                 <string>http://192.168.1.2:11311/</string>
-                </property>
-               </widget>
-              </item>
-              <item row="3" column="0">
-               <widget class="QLabel" name="label_2">
-                <property name="maximumSize">
-                 <size>
-                  <width>400</width>
-                  <height>30</height>
-                 </size>
-                </property>
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <property name="text">
-                 <string>Ros IP</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="0">
-               <widget class="QLabel" name="label">
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
-                <property name="maximumSize">
-                 <size>
-                  <width>400</width>
-                  <height>30</height>
-                 </size>
-                </property>
-<<<<<<< HEAD
                 <property name="text">
                  <string>192.168.1.67</string>
                 </property>
@@ -133,20 +95,12 @@
                <widget class="QCheckBox" name="checkbox_use_environment">
                 <property name="layoutDirection">
                  <enum>Qt::RightToLeft</enum>
-=======
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
                 </property>
                 <property name="text">
-                 <string>Ros Master Url</string>
+                 <string>Use environment variables</string>
                 </property>
                </widget>
               </item>
-<<<<<<< HEAD
               <item row="1" column="0">
                <widget class="QLabel" name="label">
                 <property name="maximumSize">
@@ -187,33 +141,6 @@
               </item>
               <item row="3" column="0">
                <widget class="QLabel" name="label_2">
-=======
-              <item row="4" column="0">
-               <widget class="QLineEdit" name="line_edit_host">
-                <property name="maximumSize">
-                 <size>
-                  <width>402</width>
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>192.168.1.67</string>
-                </property>
-               </widget>
-              </item>
-              <item row="1" column="2" rowspan="12">
-               <widget class="QLabel" name="label_4">
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item row="12" column="3">
-               <widget class="QLineEdit" name="line_edit_topic">
-                <property name="enabled">
-                 <bool>false</bool>
-                </property>
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
                 <property name="maximumSize">
                  <size>
                   <width>400</width>
@@ -231,7 +158,6 @@
                 </property>
                </widget>
               </item>
-<<<<<<< HEAD
               <item row="1" column="2" rowspan="13">
                <widget class="QLabel" name="label_4">
                 <property name="text">
@@ -250,10 +176,6 @@
                   <verstretch>0</verstretch>
                  </sizepolicy>
                 </property>
-=======
-              <item row="11" column="3">
-               <widget class="QLabel" name="label_3">
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
                 <property name="maximumSize">
                  <size>
                   <width>402</width>
@@ -281,39 +203,20 @@
                 </property>
                </widget>
               </item>
-              <item row="6" column="0">
-               <widget class="QPushButton" name="button_connect">
-                <property name="enabled">
-                 <bool>true</bool>
-                </property>
-                <property name="sizePolicy">
-                 <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
-                  <horstretch>0</horstretch>
-                  <verstretch>0</verstretch>
-                 </sizepolicy>
-                </property>
+              <item row="2" column="0">
+               <widget class="QLineEdit" name="line_edit_master">
                 <property name="maximumSize">
                  <size>
                   <width>402</width>
                   <height>16777215</height>
                  </size>
                 </property>
-                <property name="toolTip">
-                 <string>Set the target to the current joint trajectory state.</string>
-                </property>
-                <property name="statusTip">
-                 <string>Clear all waypoints and set the target to the current joint trajectory state.</string>
-                </property>
                 <property name="text">
-                 <string>Connect</string>
+                 <string>http://192.168.1.2:11311/</string>
                 </property>
                </widget>
               </item>
-<<<<<<< HEAD
               <item row="8" column="0">
-=======
-              <item row="7" column="0">
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
                <widget class="QPushButton" name="quit_button">
                 <property name="sizePolicy">
                  <sizepolicy hsizetype="MinimumExpanding" vsizetype="Fixed">
@@ -324,39 +227,11 @@
                 <property name="maximumSize">
                  <size>
                   <width>402</width>
-<<<<<<< HEAD
                   <height>50</height>
                  </size>
                 </property>
                 <property name="text">
                  <string>Quit</string>
-=======
-                  <height>16777215</height>
-                 </size>
-                </property>
-                <property name="text">
-                 <string>Quit</string>
-                </property>
-               </widget>
-              </item>
-              <item row="10" column="3">
-               <widget class="QCheckBox" name="checkbox_use_environment">
-                <property name="layoutDirection">
-                 <enum>Qt::RightToLeft</enum>
-                </property>
-                <property name="text">
-                 <string>Use environment variables</string>
-                </property>
-               </widget>
-              </item>
-              <item row="9" column="3">
-               <widget class="QCheckBox" name="checkbox_remember_settings">
-                <property name="layoutDirection">
-                 <enum>Qt::RightToLeft</enum>
-                </property>
-                <property name="text">
-                 <string>Remember settings on startup</string>
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
                 </property>
                </widget>
               </item>
@@ -400,17 +275,10 @@
        <widget class="QPushButton" name="startvideo">
         <property name="geometry">
          <rect>
-<<<<<<< HEAD
           <x>840</x>
           <y>10</y>
           <width>221</width>
           <height>61</height>
-=======
-          <x>10</x>
-          <y>590</y>
-          <width>171</width>
-          <height>41</height>
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
          </rect>
         </property>
         <property name="text">
@@ -420,17 +288,10 @@
        <widget class="QPushButton" name="suspendvideo">
         <property name="geometry">
          <rect>
-<<<<<<< HEAD
           <x>840</x>
           <y>100</y>
           <width>221</width>
           <height>61</height>
-=======
-          <x>190</x>
-          <y>590</y>
-          <width>171</width>
-          <height>41</height>
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
          </rect>
         </property>
         <property name="text">
@@ -440,17 +301,10 @@
        <widget class="QPushButton" name="snapshot">
         <property name="geometry">
          <rect>
-<<<<<<< HEAD
           <x>840</x>
           <y>190</y>
           <width>221</width>
           <height>61</height>
-=======
-          <x>370</x>
-          <y>590</y>
-          <width>171</width>
-          <height>41</height>
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
          </rect>
         </property>
         <property name="text">

@@ -49,7 +49,6 @@ public:
     QVBoxLayout *verticalLayout_3;
     QGroupBox *groupBox;
     QGridLayout *gridLayout;
-<<<<<<< HEAD
     QLineEdit *line_edit_host;
     QLineEdit *line_edit_topic;
     QCheckBox *checkbox_use_environment;
@@ -61,19 +60,6 @@ public:
     QCheckBox *checkbox_remember_settings;
     QLineEdit *line_edit_master;
     QPushButton *quit_button;
-=======
-    QLineEdit *line_edit_master;
-    QLabel *label_2;
-    QLabel *label;
-    QLineEdit *line_edit_host;
-    QLabel *label_4;
-    QLineEdit *line_edit_topic;
-    QLabel *label_3;
-    QPushButton *button_connect;
-    QPushButton *quit_button;
-    QCheckBox *checkbox_use_environment;
-    QCheckBox *checkbox_remember_settings;
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
     QWidget *tab;
     QLabel *view_logging;
     QPushButton *startvideo;
@@ -133,57 +119,23 @@ public:
         groupBox->setObjectName(QStringLiteral("groupBox"));
         gridLayout = new QGridLayout(groupBox);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-<<<<<<< HEAD
-=======
-        line_edit_master = new QLineEdit(groupBox);
-        line_edit_master->setObjectName(QStringLiteral("line_edit_master"));
-        line_edit_master->setMaximumSize(QSize(402, 16777215));
-
-        gridLayout->addWidget(line_edit_master, 2, 0, 1, 1);
-
-        label_2 = new QLabel(groupBox);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setMaximumSize(QSize(400, 30));
-        label_2->setFrameShape(QFrame::StyledPanel);
-        label_2->setFrameShadow(QFrame::Raised);
-
-        gridLayout->addWidget(label_2, 3, 0, 1, 1);
-
-        label = new QLabel(groupBox);
-        label->setObjectName(QStringLiteral("label"));
-        label->setMaximumSize(QSize(400, 30));
-        label->setFrameShape(QFrame::StyledPanel);
-        label->setFrameShadow(QFrame::Raised);
-
-        gridLayout->addWidget(label, 1, 0, 1, 1);
-
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
         line_edit_host = new QLineEdit(groupBox);
         line_edit_host->setObjectName(QStringLiteral("line_edit_host"));
         line_edit_host->setMaximumSize(QSize(402, 16777215));
 
         gridLayout->addWidget(line_edit_host, 4, 0, 1, 1);
 
-<<<<<<< HEAD
         line_edit_topic = new QLineEdit(groupBox);
         line_edit_topic->setObjectName(QStringLiteral("line_edit_topic"));
         line_edit_topic->setEnabled(false);
         line_edit_topic->setMaximumSize(QSize(402, 16777215));
 
         gridLayout->addWidget(line_edit_topic, 13, 3, 1, 1);
-=======
-        label_4 = new QLabel(groupBox);
-        label_4->setObjectName(QStringLiteral("label_4"));
 
-        gridLayout->addWidget(label_4, 1, 2, 12, 1);
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
+        checkbox_use_environment = new QCheckBox(groupBox);
+        checkbox_use_environment->setObjectName(QStringLiteral("checkbox_use_environment"));
+        checkbox_use_environment->setLayoutDirection(Qt::RightToLeft);
 
-        line_edit_topic = new QLineEdit(groupBox);
-        line_edit_topic->setObjectName(QStringLiteral("line_edit_topic"));
-        line_edit_topic->setEnabled(false);
-        line_edit_topic->setMaximumSize(QSize(402, 16777215));
-
-<<<<<<< HEAD
         gridLayout->addWidget(checkbox_use_environment, 11, 3, 1, 1);
 
         label = new QLabel(groupBox);
@@ -193,9 +145,6 @@ public:
         label->setFrameShadow(QFrame::Raised);
 
         gridLayout->addWidget(label, 1, 0, 1, 1);
-=======
-        gridLayout->addWidget(line_edit_topic, 12, 3, 1, 1);
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
 
         label_3 = new QLabel(groupBox);
         label_3->setObjectName(QStringLiteral("label_3"));
@@ -203,7 +152,6 @@ public:
         label_3->setFrameShape(QFrame::StyledPanel);
         label_3->setFrameShadow(QFrame::Raised);
 
-<<<<<<< HEAD
         gridLayout->addWidget(label_3, 12, 3, 1, 1);
 
         label_2 = new QLabel(groupBox);
@@ -218,9 +166,6 @@ public:
         label_4->setObjectName(QStringLiteral("label_4"));
 
         gridLayout->addWidget(label_4, 1, 2, 13, 1);
-=======
-        gridLayout->addWidget(label_3, 11, 3, 1, 1);
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
 
         button_connect = new QPushButton(groupBox);
         button_connect->setObjectName(QStringLiteral("button_connect"));
@@ -230,7 +175,6 @@ public:
         sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(button_connect->sizePolicy().hasHeightForWidth());
         button_connect->setSizePolicy(sizePolicy1);
-<<<<<<< HEAD
         button_connect->setMaximumSize(QSize(402, 50));
 
         gridLayout->addWidget(button_connect, 6, 0, 1, 1);
@@ -244,27 +188,9 @@ public:
         line_edit_master = new QLineEdit(groupBox);
         line_edit_master->setObjectName(QStringLiteral("line_edit_master"));
         line_edit_master->setMaximumSize(QSize(402, 16777215));
-=======
-        button_connect->setMaximumSize(QSize(402, 16777215));
 
-        gridLayout->addWidget(button_connect, 6, 0, 1, 1);
+        gridLayout->addWidget(line_edit_master, 2, 0, 1, 1);
 
-        quit_button = new QPushButton(groupBox);
-        quit_button->setObjectName(QStringLiteral("quit_button"));
-        sizePolicy1.setHeightForWidth(quit_button->sizePolicy().hasHeightForWidth());
-        quit_button->setSizePolicy(sizePolicy1);
-        quit_button->setMaximumSize(QSize(402, 16777215));
-
-        gridLayout->addWidget(quit_button, 7, 0, 1, 1);
-
-        checkbox_use_environment = new QCheckBox(groupBox);
-        checkbox_use_environment->setObjectName(QStringLiteral("checkbox_use_environment"));
-        checkbox_use_environment->setLayoutDirection(Qt::RightToLeft);
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
-
-        gridLayout->addWidget(checkbox_use_environment, 10, 3, 1, 1);
-
-<<<<<<< HEAD
         quit_button = new QPushButton(groupBox);
         quit_button->setObjectName(QStringLiteral("quit_button"));
         sizePolicy1.setHeightForWidth(quit_button->sizePolicy().hasHeightForWidth());
@@ -272,13 +198,6 @@ public:
         quit_button->setMaximumSize(QSize(402, 50));
 
         gridLayout->addWidget(quit_button, 8, 0, 1, 1);
-=======
-        checkbox_remember_settings = new QCheckBox(groupBox);
-        checkbox_remember_settings->setObjectName(QStringLiteral("checkbox_remember_settings"));
-        checkbox_remember_settings->setLayoutDirection(Qt::RightToLeft);
-
-        gridLayout->addWidget(checkbox_remember_settings, 9, 3, 1, 1);
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
 
 
         verticalLayout_3->addWidget(groupBox);
@@ -297,7 +216,6 @@ public:
         view_logging->setFrameShadow(QFrame::Plain);
         startvideo = new QPushButton(tab);
         startvideo->setObjectName(QStringLiteral("startvideo"));
-<<<<<<< HEAD
         startvideo->setGeometry(QRect(840, 10, 221, 61));
         suspendvideo = new QPushButton(tab);
         suspendvideo->setObjectName(QStringLiteral("suspendvideo"));
@@ -305,15 +223,6 @@ public:
         snapshot = new QPushButton(tab);
         snapshot->setObjectName(QStringLiteral("snapshot"));
         snapshot->setGeometry(QRect(840, 190, 221, 61));
-=======
-        startvideo->setGeometry(QRect(10, 590, 171, 41));
-        suspendvideo = new QPushButton(tab);
-        suspendvideo->setObjectName(QStringLiteral("suspendvideo"));
-        suspendvideo->setGeometry(QRect(190, 590, 171, 41));
-        snapshot = new QPushButton(tab);
-        snapshot->setObjectName(QStringLiteral("snapshot"));
-        snapshot->setGeometry(QRect(370, 590, 171, 41));
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
         tab_manager->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QStringLiteral("tab_2"));
@@ -374,7 +283,6 @@ public:
         actionAbout->setText(QApplication::translate("MainWindowDesign", "&About", 0));
         actionAbout_Qt->setText(QApplication::translate("MainWindowDesign", "About &Qt", 0));
         groupBox->setTitle(QString());
-<<<<<<< HEAD
         line_edit_host->setText(QApplication::translate("MainWindowDesign", "192.168.1.67", 0));
         line_edit_topic->setText(QApplication::translate("MainWindowDesign", "unused", 0));
         checkbox_use_environment->setText(QApplication::translate("MainWindowDesign", "Use environment variables", 0));
@@ -382,15 +290,6 @@ public:
         label_3->setText(QApplication::translate("MainWindowDesign", "Ros Hostname", 0));
         label_2->setText(QApplication::translate("MainWindowDesign", "Ros IP", 0));
         label_4->setText(QString());
-=======
-        line_edit_master->setText(QApplication::translate("MainWindowDesign", "http://192.168.1.2:11311/", 0));
-        label_2->setText(QApplication::translate("MainWindowDesign", "Ros IP", 0));
-        label->setText(QApplication::translate("MainWindowDesign", "Ros Master Url", 0));
-        line_edit_host->setText(QApplication::translate("MainWindowDesign", "192.168.1.67", 0));
-        label_4->setText(QString());
-        line_edit_topic->setText(QApplication::translate("MainWindowDesign", "unused", 0));
-        label_3->setText(QApplication::translate("MainWindowDesign", "Ros Hostname", 0));
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
 #ifndef QT_NO_TOOLTIP
         button_connect->setToolTip(QApplication::translate("MainWindowDesign", "Set the target to the current joint trajectory state.", 0));
 #endif // QT_NO_TOOLTIP
@@ -398,15 +297,9 @@ public:
         button_connect->setStatusTip(QApplication::translate("MainWindowDesign", "Clear all waypoints and set the target to the current joint trajectory state.", 0));
 #endif // QT_NO_STATUSTIP
         button_connect->setText(QApplication::translate("MainWindowDesign", "Connect", 0));
-<<<<<<< HEAD
         checkbox_remember_settings->setText(QApplication::translate("MainWindowDesign", "Remember settings on startup", 0));
         line_edit_master->setText(QApplication::translate("MainWindowDesign", "http://192.168.1.2:11311/", 0));
         quit_button->setText(QApplication::translate("MainWindowDesign", "Quit", 0));
-=======
-        quit_button->setText(QApplication::translate("MainWindowDesign", "Quit", 0));
-        checkbox_use_environment->setText(QApplication::translate("MainWindowDesign", "Use environment variables", 0));
-        checkbox_remember_settings->setText(QApplication::translate("MainWindowDesign", "Remember settings on startup", 0));
->>>>>>> dd51b76422fed7cb6366991935500086722711b4
         tab_manager->setTabText(tab_manager->indexOf(tab_status), QApplication::translate("MainWindowDesign", "Ros Communications", 0));
         view_logging->setText(QApplication::translate("MainWindowDesign", "cam1", 0));
         startvideo->setText(QApplication::translate("MainWindowDesign", "Start", 0));
