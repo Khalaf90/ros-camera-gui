@@ -33,6 +33,7 @@ Camera GUI in ROS with Qt5/C++
     * suppose that the camera node and gui node are running on different computers, to establish the ROS network:
 		* in the computer where camera node and roscore is running: navigate to .bashrc file `gedit .bashrc` 
 		* add `export ROS_IP=<gui node Computer IP>` at the end
+		* you may check how to establish ros network [at](https://www.youtube.com/watch?v=1KOrXSEDQ3k)
 	* the second and third tabs are for displaying the camera pictures and offering the user following services: `start`, `stop` and `snapshot` 
 	
 	
