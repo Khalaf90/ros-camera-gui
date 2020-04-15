@@ -74,7 +74,7 @@ Attention: This GUI is designed to display 16-bit grayscale images from thermal 
 		* save your modifications `Ctrl+S` 
 		* delete `main_window.hpp` in src/qtros/include/qtros/main_window.hpp and delete the build and devel folders generated after catkin_make
 		* `catkin_make` and ignore the error which will appear
-		* go the `gui_ws/build/qtros` and copy the new generated main_window.hpp and paste it in src/qtros/include/qtros/
+		* go to `gui_ws/build/qtros` and copy the new generated main_window.hpp and paste it in src/qtros/include/qtros/
 		* `catkin_make`
 		* run the package and you will see now your modifications
 
